@@ -14,12 +14,12 @@ function intToHex(num){
 exports.hexToRgb = function(hex){
     // #FFFFFF
     if(hex[0] === '#'){
-        hex = hex.substring(0);
+        hex = hex.substring(1);
     }
 
     let r = hexToInt(hex.substring(0,2));
     let g = hexToInt(hex.substring(2,4));
-    let r = hexToInt(hex.substring(4,6));
+    let b = hexToInt(hex.substring(4,6));
 
     return `${r},${g},${b}`;
 }
