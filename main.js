@@ -8,7 +8,7 @@ exports.rgbToHex = function(r, g, b){
 }
 
 function intToHex(num){
-    return parseInt(num.toString(), 10);
+    return num.toString(16);
 }
 
 exports.hexToRgb = function(hex){
