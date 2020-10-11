@@ -3,8 +3,7 @@ exports.rgbToHex = function(r, g, b){
     let j = intToHex(g);
     let k = intToHex(b);
 
-    return `#${i},${j},${k}`;
-
+    return `#${i}${j}${k}`;
 }
 
 function intToHex(num){
