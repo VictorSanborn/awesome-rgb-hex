@@ -1,10 +1,14 @@
 exports.rgbToHex = function(r, g, b){
+    let i = intToHex(r)
+    let j = intToHex(g);
+    let k = intToHex(b);
 
+    return `#${i},${j},${k}`;
 
 }
 
 function intToHex(num){
-
+    return parseInt(num.toString(), 10);
 }
 
 exports.hexToRgb = function(hex){
