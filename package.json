@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/VictorSanborn/awesome-rgb-hex/issues"
   },
-  "homepage": "https://github.com/VictorSanborn/awesome-rgb-hex#readme"
+  "homepage": "https://github.com/VictorSanborn/awesome-rgb-hex#readme",
+  "devDependencies": {
+    "jest": "^26.5.3"
+  }
 }
