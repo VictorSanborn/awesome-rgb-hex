@@ -1,9 +1,11 @@
-exports.rgbToHex = function(r, g, b){
+exports.rgbToHex = function(r, g, b, a = null){
     let i = intToHex(r)
     let j = intToHex(g);
     let k = intToHex(b);
+    let l = a !== null? intToHex(Math.round(a*255)): ''
+  
 
-    return `#${i}${j}${k}`;
+    return `#${l.toLowerCase()}${i}${j}${k}`;
 }
 
 function intToHex(num){
