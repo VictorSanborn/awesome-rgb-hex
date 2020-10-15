@@ -5,7 +5,7 @@ test('Testing RGB to Hex', () => {
 });
 
 test('Testing RGBA to Hex', () => {
-    expect(main.rgbToHex(66,135,245,0.5)).toBe('#4287f580');
+    expect(main.rgbToHex(66,135,245,0.49)).toBe('#7d4287f5');
 });
 
 test('Testing Hex to RGB', () => {
