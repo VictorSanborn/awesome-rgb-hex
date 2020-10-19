@@ -12,3 +12,8 @@ test('Testing Hex to RGB', () => {
     expect(main.hexToRgb('#4287f5')).toBe('66,135,245');
     expect(main.hexToRgb('4287f5')).toBe('66,135,245');
 });
+
+test('Testing Hex to RGBA', () => {
+    expect(main.hexToRgb('#7d4287f5')).toBe('66,135,245', 0.49);
+    expect(main.hexToRgb('7d4287f5')).toBe('66,135,245', 0.49);
+});
